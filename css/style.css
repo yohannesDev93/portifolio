@@ -817,3 +817,105 @@
 body::-webkit-scrollbar{
         display: none;
     }
+
+/* Mobile Navigation Fixes */
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        background: rgba(255, 255, 255, 0.98);
+        margin-top: 15px;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+    
+    .navbar-nav {
+        text-align: center;
+    }
+    
+    .nav-item {
+        margin: 10px 0;
+    }
+    
+    .navbar-toggler {
+        border: none;
+        padding: 5px 10px;
+    }
+    
+    /* Fix for mobile layout */
+    .hero-section .container.row {
+        margin: 0;
+        padding: 0 15px;
+    }
+    
+    .hero-content {
+        padding: 20px 0;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .hero-section {
+        padding-left: 15px;
+        padding-right: 15px;
+        text-align: center;
+    }
+    
+    .d-flex.gap-5 {
+        gap: 15px !important;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .small-projects {
+        justify-content: center;
+    }
+}
+
+.small-projects {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+@media (max-width: 767.98px) {
+    .small-projects-card {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+/* Ensure proper spacing on mobile */
+@media (max-width: 767.98px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    .hero-title {
+        font-size: 2.5rem;
+        line-height: 1.2;
+    }
+    
+    .hero-description {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+    
+    .btn {
+        margin-bottom: 10px;
+    }
+    
+    /* Fix timeline on mobile */
+    .timeline {
+        padding-left: 30px;
+    }
+    
+    .timeline::before {
+        left: 15px;
+    }
+    
+    .timeline-dot {
+        left: -25px;
+        width: 16px;
+        height: 16px;
+    }
+}
