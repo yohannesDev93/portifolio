@@ -16,9 +16,7 @@
         padding-top: 80px;
         width: 100%;
     }
-    body::-webkit-scrollbar{
-        display: none;
-    }
+    
     .last-name{
         color:chocolate;
         font-style: italic;
@@ -815,4 +813,7 @@
     }
     #projects h2,#projects h5{
         color: white;
+    }
+body::-webkit-scrollbar{
+        display: none;
     }
